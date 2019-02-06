@@ -1,0 +1,97 @@
+<!--
+  activity_moving_ball.xml Copyright (c) Kari Laitinen
+  
+  http://www.naturalprogramming.com/
+
+  2012-02-10 File created.
+  2019-01-16 Last modification.
+  
+  The texts on the buttons are 'hard-coded' in this file.
+  A nice exercise would be to move them to strings.xml.
+
+  In XML you need to write &lt; in order to produce the
+  special character <. The following is a list of special
+  characters that need to be coded with the help of
+  the ampersand sign &.
+
+    &lt;    <  less than
+    &gt;    >  greater than
+    &amp;   &  ampersand 
+    &apos;  '  apostrophe
+    &quot;  "  quotation mark
+
+   It seems that you have to specify a zero layout_height when
+   you specify a layout_weight for a vertical LinearLayout.
+   For horizontal LinearLayout layout_width needs to be zero.
+   
+   With the layout_weight values "0.9" and "0.1" the custom
+   view MovingBallView takes 90% of the screen.
+  
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+ android:orientation="vertical"
+ android:layout_width="fill_parent" 
+ android:layout_height="fill_parent">
+<moving.ball.MovingBallView android:id="@+id/moving_ball_view"
+ android:layout_width="fill_parent"
+ android:layout_height="0dp" 
+ android:layout_weight="0.7"/>
+<SeekBar android:id="@+id/seekbar_for_ball_transparency" 
+android:layout_width="fill_parent"
+ android:background="#DDDDDD" 
+ android:layout_height="0dp" 
+ android:layout_weight="0.1" 
+ android:max="255" android:progress="128"/>
+<LinearLayout android:orientation="horizontal" 
+android:layout_width="fill_parent" 
+android:layout_height="0dp" 
+android:layout_weight="0.1">
+<Button android:id="@+id/reset_button" 
+android:text="RESET" android:onClick="reset_button_clicked"
+ android:gravity="center_horizontal" 
+ android:layout_width="wrap_content" 
+ android:layout_height="fill_parent" 
+ android:layout_weight="1"/>
+<Button android:id="@+id/up_button"
+ android:text="Up" 
+ android:onClick="up_button_clicked" 
+ android:gravity="center_horizontal" 
+ android:layout_width="wrap_content" 
+ android:layout_height="fill_parent" 
+ android:backgroundTint="#777777" 
+ android:layout_weight="1"/>
+<Button android:id="@+id/color_button"
+ android:text="COLOR" 
+ android:gravity="center_horizontal" 
+ android:layout_width="wrap_content" 
+ android:layout_height="fill_parent" 
+ android:layout_weight="1"/>
+</LinearLayout>
+<LinearLayout android:orientation="horizontal"
+ android:layout_width="fill_parent"
+  android:layout_height="0dp" 
+  android:layout_weight="0.1">
+<Button android:id="@+id/left_button" 
+android:text=" < " android:onClick="left_button_clicked"
+ android:gravity="center_horizontal"
+  android:layout_width="wrap_content"
+  android:layout_height="fill_parent" 
+  android:backgroundTint="#777777" 
+  android:layout_weight="1"/>
+<Button android:id="@+id/down_button"
+ android:text="Down" 
+ android:onClick="down_button_clicked"
+  android:gravity="center_horizontal" 
+  android:layout_width="wrap_content"
+   android:layout_height="fill_parent" 
+   android:backgroundTint="#777777" 
+   android:layout_weight="1"/>
+<Button android:id="@+id/right_button" 
+android:text=" > " android:onClick="right_button_clicked"
+ android:gravity="center_horizontal" 
+ android:layout_width="wrap_content"
+  android:layout_height="fill_parent" 
+  android:backgroundTint="#777777" 
+  android:layout_weight="1"/>
+</LinearLayout>
+</LinearLayout>

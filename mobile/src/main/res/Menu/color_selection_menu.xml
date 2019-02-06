@@ -1,0 +1,26 @@
+<!--
+ color_selection_menu.xml  Copyright (c) Kari Laitinen
+
+   2012-02-14 File created.
+   2012-02-14 Last modification.
+
+   This file specifies the menu with which the color
+   can be changed in the MovingBall application.
+
+   Inside Java code this menu is referred to with the name
+   R.menu.color_selection_menu, i.e., the name of this file
+   is used. Individual menu items are referred to with names
+   such as red_color_item, which are given below.
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/red_color_item" android:title="@string/red"/>
+<item android:id="@+id/white_color_item" android:title="@string/white"/>
+<item android:id="@+id/yellow_color_item" android:title="@string/yellow"/>
+<item android:id="@+id/green_color_item" android:title="@string/green"/>
+<item android:id="@+id/blue_color_item" android:title="@string/blue"/>
+<item android:id="@+id/magenta_color_item" android:title="@string/magenta"/>
+<item android:id="@+id/cyan_color_item" android:title="@string/cyan"/>
+<item android:id="@+id/gray_color_item" android:title="@string/gray"/>
+<item android:id="@+id/light_gray_color_item" android:title="@string/light_gray"/>
+</menu>

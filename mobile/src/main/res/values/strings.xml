@@ -1,0 +1,14 @@
+<resources>
+<string name="hello">Hello World, MovingBallAndroid!</string>
+<string name="app_name">MovingBall</string>
+<string name="title_main">MovingBallActivity</string>
+<string name="red">RED</string>
+<string name="white">WHITE</string>
+<string name="yellow">YELLOW</string>
+<string name="green">GREEN</string>
+<string name="blue">BLUE</string>
+<string name="magenta">MAGENTA</string>
+<string name="cyan">CYAN</string>
+<string name="gray">GRAY</string>
+<string name="light_gray">LIGHT GRAY</string>
+</resources>
